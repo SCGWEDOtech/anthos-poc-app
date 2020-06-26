@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  backend1:
+    build: backend1
+    ports:
+      - 3000:3000
+
+  backend2:
+    build: backend2
+    ports:
+      - 3001:3000
