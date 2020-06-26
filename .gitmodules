@@ -1,0 +1,6 @@
+[submodule "backend1"]
+	path = backend1
+	url = https://github.com/SCGWEDOtech/anthos-poc-app-backend1.git
+[submodule "backend2"]
+	path = backend2
+	url = https://github.com/SCGWEDOtech/anthos-poc-app-backend2.git
