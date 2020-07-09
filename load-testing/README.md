@@ -23,5 +23,7 @@ $ k6 run -e BASE_URL="http://localhost:3000" \
     load-testing.js
 ```
 
+> Caution: a test runs at least 10 mins. Importantly, `soak-testing.js` takes around 3 hours.
+
 Or run the tests via cloud: <https://k6.io/docs/getting-started/running-k6#running-cloud-test>
 
