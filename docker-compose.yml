@@ -4,6 +4,7 @@ services:
   backend1:
     image: anthos-poc-app-backend1
     container_name: anthos-poc-app-backend1
+    restart: always
     depends_on:
       - backend2
     networks:
@@ -14,6 +15,7 @@ services:
   backend2:
     image: anthos-poc-app-backend2
     container_name: anthos-poc-app-backend2
+    restart: always
     networks:
       - backend
 
