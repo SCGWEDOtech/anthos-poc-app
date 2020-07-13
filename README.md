@@ -2,7 +2,7 @@
 
 Context diagram:
 
-![Image of anthos poc app context diagram](https://previews.dropbox.com/p/thumb/AA294labQR6uQLzxUq_lwjyY01WaQqwAogyRkLKxfB_C-v_BUYVrVDVu0cjqisVzhi95emGBkZZ4cKztE8D1thsVBW8nL5lZfZUC54ko-JbNtehbBqCE6yk8j6JR6Zn8XXKATDQs5Yer2gKNMdjWBEOYp2-HsxwZVz3H3OZ9RLaEmSKpxLkSFBDQyT6pBTpHgXgUzFpZDrsICVjm9nZ6B-F-_5GyzxqsSo95TmJu3brdZhpM2xYoO2xKMWjhPMsL-fDp_ZFs6b2bYQp2etG_betNhtPfIbUEmwg_R3RvTM4jA6UYgic5XKMJYJFfRJggX2HRaNxHmhZ1HmsF-gb88-gGhxmjiF0q-STUEkxEOzVCgA/p.png?fv_content=true&size_mode=5)
+![Image of anthos poc app context diagram](https://www.dropbox.com/s/4ek3u0go50areq8/anthos-poc-fibonacci-sequence.png?dl=0)
 
 ## Quick Start
 
