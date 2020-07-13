@@ -1,6 +1,7 @@
 # anthos-poc-app
 
 Context diagram
+
 ![Image of anthos poc app context diagram]
 (https://www.dropbox.com/s/4ek3u0go50areq8/anthos-poc-fibonacci-sequence.png?dl=0)
 
