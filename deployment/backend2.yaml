@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: backend2
+  name: backend2
+  annotations:
+    reloader.stakater.com/auto: "true"
+spec:
+  # do not include replicas in the manifests if you want replicas to be controlled by HPA
+  # replicas: 1
+  selector:
+    matchLabels:
+      app: backend2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: backend2
+    spec:
+      containers:
+        # TODO: change image repository and tag
+        - image: backend2
+          name: backend2
+          # TODO: remove "Never" policy for production
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
+            - name: GRPC_PORT
+              value: "50051"
+          resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend2
+  labels:
+    app: backend2
+spec:
+  type: ClusterIP
+  ports:
+    - name: grpc
+      port: 50051
+      targetPort: 50051
+      protocol: TCP
+  selector:
+    app: backend2
