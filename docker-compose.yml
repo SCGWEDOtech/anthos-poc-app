@@ -10,6 +10,7 @@ services:
     networks:
       - backend
     environment:
+      PORT: 3000
       GRPC_URL: backend2:50051
 
   backend2:
@@ -18,6 +19,9 @@ services:
     restart: always
     networks:
       - backend
+    environment:
+      PORT: 3000
+      GRPC_PORT: 50051
 
 networks:
   backend:
